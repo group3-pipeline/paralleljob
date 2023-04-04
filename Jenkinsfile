@@ -6,6 +6,7 @@ pipeline{
 				stage('1-Pretei Lemo'){
 					steps{
 						echo "subjob1 running"
+                        sh 'bash -x /var/lib/jenkins/workspace/group3paralleljob/pretei.sh'
 					}
 				}
 				stage('2-Gerald Agbonye'){
